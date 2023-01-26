@@ -1,5 +1,5 @@
-import sys
+import pathlib
 
 
 def foo():
-    print(sys.path)
+    print(pathlib.Path(__file__).parent.resolve())
